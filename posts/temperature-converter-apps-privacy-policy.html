@@ -9,8 +9,14 @@ src: url('data:application/octet-stream;base64,AAEAAAAQAQAABAAAR1BPUyH64x4AAAEMA
 }
 
 * html, body {
-font-family: Oranienbaum;
-background-color: #e5e5e5;
+font-family: Oranienbaum !important;
+background-color: #e5e5e5 !important; 
+
+
+}
+
+*{
+font-family: Oranienbaum !important;
 
 
 }
@@ -20,9 +26,8 @@ body {
 }
 
 #main {
- opacity: 0;
-  transition: 3s opacity;
-
+ opacity: 1;
+ 
 }
 
 .header { 
@@ -31,7 +36,6 @@ body {
   background: #c2c2c2;
   color: #000000;
   width: 100%;
- transition: 3s opacity;
   
 }
 
@@ -54,75 +58,6 @@ body {
   padding: 10px 16px;
   background: #e5e5e5;
   color: #000000;
-}
-</style>
-
-<style>
-.topnav a {
-  float: right;
-  color: #000000;
-  text-align: center;
- /* margin-left:15px; */
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-
-    
-    margin-top: 5rem;
- 
-    display: block;
-    padding-left: 20px;
-}
-
-.topnav a:hover {
- /* background-color: #ddd; */
-  color: black;
-    
-
-    border-bottom: 3px solid #000;
-  
-}
-
-.topnav a.active {
-  background-color: #ffffff;
-  color: black;
-  
-    
-  
-    border-bottom: 3px solid #000;
- 
-}
-
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-#nav_bar {
-margin-top:-140px;
-  transition: 1s;
 }
 </style>
 
@@ -306,26 +241,6 @@ margin-top:-60px;
 </style>
 
 <style>
-/*
-section {
-  padding: 1em;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  &:nth-of-type(2n + 2) {
-    background: #8fa7c5;
-  }
-  &:nth-of-type(2n + 1) {
-    background: #97d4c5;
-  }
-  &:nth-of-type(1) {
-    background: #f1e8d9;
-  }
-}
-
-*/
 
 section{
   min-height: 100vh;
@@ -406,242 +321,59 @@ section .cards .text-card h3{
 }
 </style>
 
-<style>
- .mySlides {display: none;
- 
- background:rgb(0,0,0);
-    background: transparent\9;
-    background:rgba(0,0,0,0.5);
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4cFF0000,endColorstr=#4cFF0000);
-    zoom: 1;
- 
- }
-.img_slides {vertical-align: middle;}
 
-
-.slideshow-container {
-  max-width: 100%;
-  width: 100%;
- 
-  max-height: 600px;
-  height: 600px;
-  position: relative;
-  margin: auto;
-    background:rgb(0,0,0);
-    background: transparent\9;
-    background:rgba(0,0,0,0.5);
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4cFF0000,endColorstr=#4cFF0000);
-    zoom: 1;
-
-	}
-
-.text {
-  color: #f2f2f2;
-  font-size: 55px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-  margin: 0;
-   top: 60%;
-  -ms-transform: translateY(-60%);
-  transform: translateY(-60%);
-
-}
-
-.text1 {
-  color: #f2f2f2;
-  font-size: 55px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-  margin: 0;
-   top: 35%;
-  -ms-transform: translateY(-80%);
-  transform: translateY(-80%);
--ms-transform: translateX(35%);
-  transform: translateX(35%);
-
-}
-
-.fade {
-  animation-name: fade;
-  animation-duration: 2.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-</style>
-<style>
-.dark-img {
-  position: relative;
-  width: 100%;
-}
-
-.dark-img img {
-  display: block;
-  width: 100%;
-}
-
-.dark-img::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
- background:rgb(0,0,0);
-    background: transparent\9;
-    background:rgba(0,0,0,0.2);
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4cFF0000,endColorstr=#4cFF0000);
-    zoom: 1;
-}
-</style>
 
 <style>
+* .main_body {
+
+ -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+
+}
 
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
-.cardTitle1 {
+* .slideshow-container > div {
+    position: block;
+    max-width: 100%;
+    width: 180px;
+    height: 240px;
+	margin-top: 120px;
+    max-height: 100%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	
+
+}
+
+* .slideshow-container > div > img {
+    height: 100%;
+    width: 100%;
+}
+
+/*
+#s_i_1 a:link, a:visited {
+  color: #000000;
   text-decoration: none;
 }
-.title1 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-}
-.row1 {
 
-  max-width: 900px;
-  margin: 50px auto 0;
-    box-sizing: border-box;
+#s_i_1 a:hover, a:active {
+  background-color: #c2c2c2;
 }
 
-.row1:hover {
-cursor: pointer;
-}
+*/
+#s_i_1 {
 
-.card1 {
-  padding: 0 1.7rem;
-
+text-align: left;
 }
-.card1 .menu-content1 {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-.card1 .menu-content1::before, .card1 .menu-content1::after {
-  content: '';
-  display: table;
-}
-.card1 .menu-content1::after {
-  clear: both;
-}
-.card1 .menu-content1 li {
-  display: inline-block;
-}
-.card1 .menu-content1 a {
-  color: #fff;
-}
-.card1 .menu-content1 span {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  font-size: 10px;
-  font-weight: 700;
-  font-family: 'Open Sans';
-  transform: translate(-50%, 0);
-}
-.card1 .wrapper1 {
-  background-color: #fff;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
-}
-.card1 .data1 {
-  float: right;
-  width: 60%;
-  height: 100%;
-}
-.card1 .data1 .content1 {
-  padding: 1em;
-  position: relative;
-  z-index: 1;
-}
-.card1 .author1 {
-  font-size: 12px;
-}
-.card1 .title1 {
-  margin-top: 10px;
-}
-.card1 .text1 {
-  height: 70px;
-  margin: 0;
-}
-.card1 input[type='checkbox'] {
-  display: none;
-}
-.card1 input[type='checkbox']:checked + .menu-content1 {
-  transform: translateY(-60px);
-}
-.example-1 .date1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #77d7b9;
-  color: #fff;
-  padding: 0.8em;
-}
-.example-1 .date1 span {
-  display: block;
-  text-align: center;
-}
-.example-1 .date1 .day1 {
-  font-weight: 700;
-  font-size: 24px;
-  text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.18);
-}
-.example-1 .date1 .month1 {
-  text-transform: uppercase;
-}
-.example-1 .date1 .month1, .example-1 .date1 .year1 {
-  font-size: 12px;
-}
-.example-1 .content1 {
-  background-color: #fff;
-  box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.3);
-}
-.example-1 .title1 a {
-  color: grey;
-}
-.image1 {
-  float: left;
-  width: 40%;
-}
-.book-image1 {
-  width: 100%;
-  display: block;
-  height: 80%;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 </style>
+
 </head>
-<!--
-<script>
-!function(t,e){"function"==typeof define&&define.amd?define(e):"object"==typeof exports?module.exports=e(require,exports,module):t.ScrollReveal=e()}(this,function(t,e,i){return function(){var t,e,i;this.ScrollReveal=function(){function n(i){return window==this?new n(i):(e=this,e.tools=new t,e.tools.extend(e.defaults,i||{}),e.supported()||console.log("ScrollReveal is not supported in this browser."),e.store={elements:{},containers:[]},e.history=[],e.counter=0,e.initialized=!1,e)}function o(t,i){t.config?t.config=e.tools.extendClone(t.config,i):t.config=e.tools.extendClone(e.defaults,i),"top"===t.config.origin||"bottom"===t.config.origin?t.config.axis="Y":t.config.axis="X",("top"===t.config.origin||"left"===t.config.origin)&&(t.config.distance="-"+t.config.distance)}function r(t){function e(e){parseInt(i.distance)&&(e.initial+=" translate"+i.axis+"("+i.distance+")",e.target+=" translate"+i.axis+"(0)"),i.scale&&(e.initial+=" scale("+i.scale+")",e.target+=" scale(1)"),i.rotate.x&&(e.initial+=" rotateX("+i.rotate.x+"deg)",e.target+=" rotateX(0)"),i.rotate.y&&(e.initial+=" rotateY("+i.rotate.y+"deg)",e.target+=" rotateY(0)"),i.rotate.z&&(e.initial+=" rotateZ("+i.rotate.z+"deg)",e.target+=" rotateZ(0)"),e.initial+="; opacity: "+i.opacity+";",e.target+="; opacity: "+t.styles.computed.opacity+";"}var i=t.config,n=window.getComputedStyle(t.domEl);t.styles||(t.styles={transition:{},transform:{},computed:{}},t.styles.inline=t.domEl.getAttribute("style")||"",t.styles.inline+="; visibility: visible; ",t.styles.computed.opacity=n.opacity,n.transition&&"all 0s ease 0s"!=n.transition?t.styles.computed.transition=n.transition+", ":t.styles.computed.transition=""),t.styles.transition.instant="-webkit-transition: "+t.styles.computed.transition+"-webkit-transform "+i.duration/1e3+"s "+i.easing+" 0s, opacity "+i.duration/1e3+"s "+i.easing+" 0s; transition: "+t.styles.computed.transition+"transform "+i.duration/1e3+"s "+i.easing+" 0s, opacity "+i.duration/1e3+"s "+i.easing+" 0s; ",t.styles.transition.delayed="-webkit-transition: "+t.styles.computed.transition+"-webkit-transform "+i.duration/1e3+"s "+i.easing+" "+i.delay/1e3+"s, opacity "+i.duration/1e3+"s "+i.easing+" "+i.delay/1e3+"s; transition: "+t.styles.computed.transition+"transform "+i.duration/1e3+"s "+i.easing+" "+i.delay/1e3+"s, opacity "+i.duration/1e3+"s "+i.easing+" "+i.delay/1e3+"s; ",t.styles.transform.initial=" -webkit-transform:",t.styles.transform.target=" -webkit-transform:",e(t.styles.transform),t.styles.transform.initial+="transform:",t.styles.transform.target+="transform:",e(t.styles.transform)}function s(t){var i=t.config.container;i&&-1==e.store.containers.indexOf(i)&&e.store.containers.push(t.config.container),e.store.elements[t.id]=t}function a(t,i){var n={selector:t,config:i};e.history.push(n)}function l(){if(e.supported()){f();for(var t=0;t<e.store.containers.length;t++)e.store.containers[t].addEventListener("scroll",c),e.store.containers[t].addEventListener("resize",c);e.initialized||(window.addEventListener("scroll",c),window.addEventListener("resize",c),e.initialized=!0)}return e}function c(){i(f)}function f(){function t(t,e){var i=0,n=0,o="after";switch(t){case"reveal":n=e.config.duration+e.config.delay,o+="Reveal";break;case"reset":n=e.config.duration,o+="Reset"}return e.timer&&(i=Math.abs(e.timer.started-new Date),window.clearTimeout(e.timer.clock)),e.timer={started:new Date},e.timer.clock=window.setTimeout(function(){e.config[o](e.domEl),e.timer=null},n-i),"reveal"===t?e.revealed=!0:e.revealed=!1}var i,n;e.tools.forOwn(e.store.elements,function(o){return i=e.store.elements[o],n=m(i),!n||i.revealed||i.disabled?void(!n&&i.config.reset&&i.revealed&&!i.disabled&&(i.domEl.setAttribute("style",i.styles.inline+i.styles.transform.initial+i.styles.transition.instant),t("reset",i))):("always"===i.config.useDelay||"onload"===i.config.useDelay&&!e.initialized||"once"===i.config.useDelay&&!i.seen?i.domEl.setAttribute("style",i.styles.inline+i.styles.transform.target+i.styles.transition.delayed):i.domEl.setAttribute("style",i.styles.inline+i.styles.transform.target+i.styles.transition.instant),t("reveal",i),i.seen=!0)})}function d(t){t||(t=window.document.documentElement);var e=t.clientWidth,i=t.clientHeight;return{width:e,height:i}}function u(t){if(t){var e=y(t);return{x:t.scrollLeft+e.left,y:t.scrollTop+e.top}}return{x:window.pageXOffset,y:window.pageYOffset}}function y(t){var e=0,i=0,n=t.offsetHeight,o=t.offsetWidth;do isNaN(t.offsetTop)||(e+=t.offsetTop),isNaN(t.offsetLeft)||(i+=t.offsetLeft);while(t=t.offsetParent);return{top:e,left:i,height:n,width:o}}function m(t){function e(){var e=c+a*s,i=f+l*s,n=m-a*s,d=g-l*s,u=r.y+t.config.viewOffset.top,y=r.x+t.config.viewOffset.left,p=r.y-t.config.viewOffset.bottom+o.height,w=r.x-t.config.viewOffset.right+o.width;return p>e&&n>u&&i>y&&w>d}function i(){return"fixed"===window.getComputedStyle(t.domEl).position}var n=y(t.domEl),o=d(t.config.container),r=u(t.config.container),s=t.config.viewFactor,a=n.height,l=n.width,c=n.top,f=n.left,m=c+a,g=f+l;return e()||i()}return n.prototype.defaults={origin:"bottom",distance:"20px",duration:500,delay:0,rotate:{x:0,y:0,z:0},opacity:0,scale:.9,easing:"cubic-bezier( 0.6, 0.2, 0.1, 1 )",container:null,mobile:!0,reset:!1,useDelay:"always",viewFactor:.2,viewOffset:{top:0,right:0,bottom:0,left:0},afterReveal:function(t){},afterReset:function(t){}},n.prototype.supported=function(){var t=document.documentElement.style;return"WebkitTransition"in t&&"WebkitTransform"in t||"transition"in t&&"transform"in t?!0:!1},n.prototype.reveal=function(t,i,n){var c,f,d,u;if(f=i&&i.container?i.container:e.defaults.container?e.defaults.container:window.document.documentElement,c=Array.prototype.slice.call(f.querySelectorAll(t)),!c.length)return console.log("reveal('"+t+"') failed: no elements found."),e;for(var y=0;y<c.length;y++)u=c[y].getAttribute("data-sr-id"),u?d=e.store.elements[u]:(d={id:++e.counter,domEl:c[y],seen:!1,revealed:!1},d.domEl.setAttribute("data-sr-id",d.id)),o(d,i||{}),r(d),s(d),e.tools.isMobile()&&!d.config.mobile||!e.supported()?(d.domEl.setAttribute("style",d.styles.inline),d.disabled=!0):d.revealed||d.domEl.setAttribute("style",d.styles.inline+d.styles.transform.initial);return!n&&e.supported()&&(a(t,i),e.initTimeout&&window.clearTimeout(e.initTimeout),e.initTimeout=window.setTimeout(l,0)),e},n.prototype.sync=function(){if(e.history.length&&e.supported()){for(var t=0;t<e.history.length;t++){var i=e.history[t];e.reveal(i.selector,i.config,!0)}l()}else console.log("sync() failed: no reveals found.");return e},n}();var t=function(){function t(){}return t.prototype.isObject=function(t){return null!==t&&"object"==typeof t&&t.constructor==Object},t.prototype.forOwn=function(t,e){if(!this.isObject(t))throw new TypeError("Expected 'object', but received '"+typeof t+"'.");for(var i in t)t.hasOwnProperty(i)&&e(i)},t.prototype.extend=function(t,e){return this.forOwn(e,function(i){this.isObject(e[i])?(t[i]&&this.isObject(t[i])||(t[i]={}),this.extend(t[i],e[i])):t[i]=e[i]}.bind(this)),t},t.prototype.extendClone=function(t,e){return this.extend(this.extend({},t),e)},t.prototype.isMobile=function(){return/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)},t}(),i=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame}.call(this),this.ScrollReveal});
-</script>
--->
 <body>
 <div id="main">
 
@@ -652,15 +384,7 @@ cursor: pointer;
   <nav class="stroke">
     <ul id="nav_bar_ul">
 	
-<li><a href="https://pratikrautsoftware.github.io" class="active">Home</a></li>  
-<!--
-  <li><div class="dropdown"><a href="#industries">Industries</a><div class="dropdown-content"><a href="#">IT Sector</a><a href="#">Business Sector</a><a href="#">Health Sector</a></div></div></li>
-  <li><div class="dropdown"><a href="#products">Products</a><div class="dropdown-content"><a href="#">Desktop</a><a href="#">Mobile</a><a href="#">Web</a></div></div></li>
-  <li><div class="dropdown"><a href="#services">Services</a><div class="dropdown-content"><a href="#">Desktop</a><a href="#">Mobile</a><a href="#">Web</a></div></div></li>
-  <li><div class="dropdown"><a href="#careers">Careers</a><div class="dropdown-content"><a href="#">IT Sector</a><a href="#">Business Executive</a><a href="#">Marketing Management</a><a href="#">Intern-ships</a><a href="#">Data Scientist</a><a href="#">Developer</a><a href="#">Tester</a></div></div></li>
-  <li><div class="dropdown"><a href="#about">About</a><div class="dropdown-content"><a href="#">About Company</a><a href="https://pratikrautsoftware.blogspot.com" target="_blank" rel="nofollow">Visit Creator's Website</a></div></div></li>
-  
-  -->
+<li><a href="https://pratikrautsoftware.github.io">Home</a></li>  
 
   <li><a href="https://pratikrautsoftware.github.io/pages/computer-softwares.html">Computer Softwares</a></li>
   <li><a href="https://pratikrautsoftware.github.io/pages/mobile-softwares.html">Mobile Softwares</a></li>
@@ -671,334 +395,39 @@ cursor: pointer;
   </nav>
 </div>
 
-<!--
- <div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="dark-img">
-  <img src="" >
-</div>
-  <div class="text">We Focus! We Achieve!</div>
-</div>
-
-<div class="mySlides fade">
-<div class="dark-img">
-  <img src="">
-</div>
-  <div class="text" style="color:#000000">We work on various<br><br>Services and Products</div>
-</div>
-
-<div class="mySlides fade">
-<div class="dark-img">
-  <img src="">
-  </div>
-  <div class="text" style="color:#000000">Making the best<br>out of every aspect</div>
-</div>
-
-
--->
 </div>
 </div>
-<!--
-<script>
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-
-  slides[slideIndex-1].style.display = "block";  
-
-  setTimeout(showSlides, 4000); 
-}
-</script>
--->
 <div class="content">
 
 <br><br><br>
-<!--
-<section class="content348"> 
-</section>
--->
   <div>
-  <center>Welcome to my website! This website consists of some of my applications and games as the remaining or unpublished ones are for my personal usages.<br><br>Browse more for finding the hidden treasure!<br><br><br>
- <br><br><br><br><br><br>
-<!--
- <div class="container reveal">
-  <div class="cards">
-  <div class="text-card">  
-  
-  <div style="display:inline-block;">
-  <img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAMAAAAL34HQAAABOFBMVEUAAADpc0YjHyAjHyAjHyDpc0bpc0bpc0YjHyAjHyDpc0YjHyDpc0bpc0YjHyDpc0YjHyDpc0bpc0YjHyDpc0YjHyAjHyAjHyDpc0bpc0bpc0YjHyAjHyAjHyDpc0YjHyAjHyAjHyAjHyDpc0bpc0YjHyDpc0YjHyAjHyAjHyDpc0YjHyAjHyAjHyDpc0bpc0bpc0bpc0YjHyAjHyDpc0bpc0YjHyAjHyDpc0YjHyDpc0bpc0bpc0YjHyDpc0YjHyAjHyAjHyDpc0YjHyAjHyDpc0bpc0bpc0YjHyDpc0bpc0bpc0bpc0bpc0YjHyAjHyAjHyDpc0YjHyAjHyDpc0bpc0bpc0bpc0bpc0YjHyDpc0bpc0YjHyAjHyDpc0YjHyDpc0bpc0bpc0bpc0bpc0bpc0bpc0YjHyAySb/nAAAAZ3RSTlMABAcD7vUL9/byB8vxHW49Cubh5Nyz4RsO1sExJpohz026OcxJ+KgVEQ5n+9bBJxKyblM0Fu7oxpWOdEMtHuqTc6yPf6OZYk4/NxkQ0MV420cxIofJooJ5XVm7iWdgVCydK/u2rVl9ZX8cIAAADcxJREFUeNrsWetaElEUPYMzw22IS9wNClEM5KoQKIiECspFREEJyig03v8Nir6S9vLMKGZ9/Wj98hyZmXX2XnudG/uP//jrEBjiX/hE9zDJ/jAs1S5bEMmecsX+MOq58IK8LBPp0sT+MEwZpR1kCyB1rR/J7I/DdCmlLezBkEf6sZf9BchV/eGDPyRkpHSD/RWkIvrLh9Zj0d76xP4Sgr1c/aG/tK9C+Ip14YmcqlgUIAYO34NiII+lHXjU6mxZ2JOg0XPgkGPS9UPkVVPwZ91W+eapolW3+47vhCFz/9s/+ZwlSGpbiQlPNt8McmFIWtLn6N5rJWOpJoCH/bazYplnadeVcn2fSV5hCk0X4GFP4FVVE+3pSwOmiWzbDqm/UYYW9qTIphVISMkZ1v5GRj8SQGoOK3tidJ1OKiZhR9tUgy1fEOOLchfkhdMmoOyVdJOuDMJODfMSLvVgWQMpAiyEm/6CSW30Myaoq4IeBlsjWQIEfeEGRM9Zums8pQWXbuHcQEBPgOik2g71cO3odyiHqj6Dhu9Am74fxz47PjOQDk0QrgtBLdphn4W+z+5P3Rn51eLWWr8z98vpXJGWZ9gZZHzcAGPTGBfO3gjMlw+DEFPSML5i7lqGTMVUCiZtL9GEldMyOnRffpSFFjBHpr5CExt0+r18CeQiJvJkBJ5kVns4+MhNjr9cZJpjFg6VIjfSFxJNWdc+kWkK00qdPRLFMsjUFMlZ6S+UAk8fqXArS8sQaLKaVHj0nC2M9DsMaIwJjWbbCYbIZWvxhbM0ES0wm/uAFpiksR86aMeFxLEeAXtrOLwdmAIWRAyNHD9g5WWx2fM1SO6xLi2+31s5Z3sQrqRjKFMGMxUBuuW+QB8Cd8jA4BZGTf+F5qdf7pJ2QbFyYjyAdg0Hq2UOSzbP7u66bUlrym5BuK/0l3QykGZtpF4i7QjkcFWqqipL9+LDQaLjdscTgc1ddWZf9De0ChwTGRJkumMP4SZRknOo6nZIauXAvSa+TIRCibho6Gx/JMSITsCvr+2ktGW/r4EbHntEIMEhQiBzA2B3TzSG3i+v23Q2m2frWd7o3l9nXJjSlAbLfKbhK+SOGcUqCPpSv0rzPqdJsLSSN4ReRecdr9+ZDa4Xt02gMQBLGJH2YKZv8LIiSCvJrRLEaUfcf027PHtG8zLjoQQpsTgnJKvHShUVT2k0w20vbbdSjIOt+PN3Ouy0VYz5M8aBtw3eOKHzjWWmeVBbloyrPGa0HeHVoSchfuAIXHdiOLBBH1c8VZoDb4/WHWv4/LKW1OpcL106X9vXMQ5sAeN7rqOCxmO0bUo7LGAhEQF+D/PhKi+FzxMqRfeiE+el8VgZQaFlaPRyXfj9BVSAlVMBgKVtwyZTQWWtAj18jRdgglsF2jHSPiyXONID7MbzJFgkXO5ElKP5Xq9Jk9QXaJJrDNo0OrREst+lh9hcO1GfIwPiCsdQh1Q8zTBKOgbaq9PohJucygWcG46YKj5sfOD0jh1Bre9YpQylRbUkt/0yDfYhJyBv3WdMFSvGbU7voXJMaTktlNaIao3SSrUorU92Dq1oPm9jqjh7HuDRguH7HUCLfmeH/hxtrJvj0FqPJzRoeToujqVVJStobRFa2QfReqlFa9f9dolj8xAtbVqoLayQJC+JtoT5NVPFxzePSmIBaBWp5NuElmXmL4ilgzcfmSpODfvQw/fDBqV1oTk5DX1ZSmso85x8k6niGe+fQsQRhOF7KS3qW4PPMS1/afZmjyOOjHuqC3eby/1jLQiG0KClRSejK6BRBB8rgL8MeRvxaIJ8mmBFPNDxDhTaoNkxJg3WU1WozCKlWS5xE3WiEi5dwMhLcBKWp1apyjEEmF1IUmucYSA8ZveWiuBFV5TTvSrtMI2kCWN7EqPr1SqJ4o824J3Rtc5dP5jfHPEPZ+u4jAOtNBiuqnFZCDtNE0/Y24a9KCeKLkNlifEKEXZkY7rsy7baMhhKrosLLJ7mEeuutYDnTqxc09CcLPlsr0kLPJxC6cEWjoZXAJrsUl/n29N0I3GkI2rffDmd8qelojIScM9MpYKbUas0Ao0PuIdPiO3pdPomsHLLInp6IH7r6ngYByMJ98SXHKmheLRopHo+XhZ1LqN7Ot0QQ/uny2dnW6/OE6Kxs2aMi1Ch8A6gCdKD2Ym+opWFLPIs4vXL/JF5I/TWbTCIbrdoMHYClbj47P3GO96tARz6eOGbcDwDO0nY3cPxOKj7+cHSslmsvDg9CXxD5Wh3yyw+0x3x5mlhDK/s5voC9XTS5p551UF+8vcDa8QrQ4WxZbPx2U/VL89YfWfLOYGYeKHMuCd9mmdgDV84RXkqBRNn+nl1y4XN/1p/mY9yjsBv4KjZGaTS4sxwctqBZzRF+pZJ+ZghAuIyYz/iNWc1233sMkDJ0U6BLPD8xu/lHVDHtG8VrpS+jC4f6njYnNc8auezXSJeAtYgetIV9ygVU39tonUCx/ny3bsVTzykY7e8Vmas1HaJ1vIQLoJBJcI4d8yhJU+ARgzZW+3+LC7Y9xi75fX8lhU7Mp6DZ01yYJX4eouz3eSfm2fwfqCBov1C87q58X6+mjBM30bnxkH3PUJGDwWTajuTapcamqe2whdYsrJGu0yHfGI4/SVabmNF99Nmzfmo9pXfgHgr3GZC7eHNI16nFOdvh73PTO1f27fa3qShMFpbpu1QwtYB04EFHAPSosmYIIkVOmaCOhkDt8gCmyZT/v8/8F6ke9pDSxcj94ueL8tgpM/Ofd7voR7XOkn3HT3ru05EldbR5228U70gOqEcu++gaoJe2Th45Z0UrbIni3LG+gu+uoxHip6LR5ebwToQ4gTKuJdHyExPmN4Ab3c3jilLDNOON4vyny5fY3PilekcvEJpA3jW921voGIBeoPqjG+bKJDh+iSIN8pXN03GFyxsmI7zGR09KRkgmsLVP5+uQPize7skin35bOscdlh1gzIDtys5X9g47kvn2y/QmfffXfnpe7nz5WiFTApVEx+2Tp9j2v266du7kVVevirNeMVl68c53pXBhTojC6u0nx2mmkCJwftQiYHi6FmwittV07rJlQuKzWOUH6AOBLGPqrLdA1K/IaqMEW7VRPb3YE1mF6U0AgmSro5Q93QdqcGDMwsXcN2wrqroWoV8UQFAfNjZ+SBBz4S6J8TbnafP4TPvXrwM3RUBVy5fzK6B1g5Ranx+/PUBqD7dSANA8YJXHodIiSdmm6xCu3LplByi4r6EB1wGq5Gw1F8vaQy/Baa6ltaONfJK0HLixEwZgUPZ7vHG+13MFtCYANw08xQO7dOFm9phGLPsqZ4+XLbLdtSTzKJxxX9x4xZsePJlK+S6GdW8B7uQ2m+vPgbtkgtJJZ/Wp/LSsK+2K2xXmA9I2LcokH/4fiNUroh/+PMB2BU0uu7Fcix3Day7tEUtzqjKe7FE0BriaEkdextaDDFWXt9Hw5z/fQlWNHiaIrCUMS8/9Vhbisb+1ulynIdmlu2w48ZhjLPT1Fp3PR+xV7YKyWhHPiXZYLR7Xb+m6hqKO58ezn1pDuZrjcXltVwIDEVUcUMNCQX2IgjqAY2y6/yO6sxNkKeNdF65M7se5S3UJd3TrsvI75TYnnyZyakpm1mViFkDBQ45HB8PHh1Hqrgx7T2G4ogoeqtLpaXWbpJ9zahDSACgrL1Bq6Ltuo74iL8WV0eakVObe7DNWX0k+6+kv46+1vPl/K45i2fpd9qPCIUMd68ZxzSZu/uKU9qWRKMS913b2Sn1ZKLrY69dbQpFYcjSDMFwU1BbVZ60vH1OwjyUhAKXH2ye7jI/UnosxSc9bWJHEghcFXFrOkkq00CoKMBiTcmfNWh3WmOnSe4nOBR5xbMXVh3qOrWCvEDmMnehOJQEAa/15YlbBqlApmy3qy5KYnHT4Cl8XgaNnuJPHW1XHDgujSVBoGFsUXPikJz4i6wK0X5EJDpqnhvAK7S0BLdmD6nJEAMlx1cMZdbPBDi12+FQJRAEvgfMMOcu8e4PQf2g7OgCQhGGMZ4KyqEJhKWNsSwgFHEY26stJgsAJdlYYlyaSiKRL53EaQ4D0GTmqG1JJLozVe3IUZRas5nQUFROTE0dlSPqU94yTUNkKFab1rhZqkF6h6hoxRrdFFtjigANY5kRe2w5nKpmqdBTeNYVh6LWZU8ezJ8cSlW/zKWpCUkcpr9v7oEwpIr2IyJAHQsnTCXCgCoO+6wgJBSxvyPCiKo4mZpsWmVJBLAblvOMsCIRZrdiOrOTSrqQUKTZAc+MqCoqsAQThIHah2PjHr6gql/GlaEQ0FwKhFW4eUQVLViFgKZ4JCznUgUdkCQANIzhxQUTch0qAcv7jCQAtKzFr2zpFh2h+P0Ipm4KwCEzrYMdw0TQfsS9CACqOmVuneGmB4haEeiXBv62nXKVTYTBnLtu4H3vsK1xS0hHqaa8hGWsmphQ5MOYlyrXDDIznah4QpGFrQjYnm9ZcC/vg5fLY6OUqivQbawbtFlAqoiwXIwI46pKERibUynEv70e5uwptEQRgK7acx9N2QCRzTEPq9KtwXpBGqhhDqgCJMeGOvew6hr3I3g5wakit15JmOIIGcr4oWQZVZQEVhDGPWyk9aT1o6e2IGWuJmySMEXsRyazM8qX0YRZ6pk5ktaP1gy8KpKwmYBQlB2dB/79kZxaxvqHssoIqYombLT+qqjIf8CwLP3Hv4dfQpMVz0aK9YsAAAAASUVORK5CYII="/><br><br>
-  REACH WIDER
-  <br><br>
-  
-  
- We bring together fragmented and<br>
-  unstructured data — wherever it lives<br>
-  — across all departments, systems,<br>
-  stakeholders and geographies to find<br>
-  the value buried in silos and hidden<br>
-  corners of your company.<br>
-  
-  </div>
-  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-  <div style="display:inline-block;">
-   <img alt="" src="data:image/png;base64,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"/><br><br>
-  DIG DEEPER
-  <br><br>
- 
- We take a bottom-up, data-led<br>
-  approach that lets the data itself lead<br>
-  you to over 300 common points of<br>
-  leakage in some of the hardest to<br>
-  mine areas of your source-to-pay<br>
-  cycle.<br>
-  
-  </div>
-  
-   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-  <div style="display:inline-block;">
-   <img alt="" src="data:image/png;base64,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"/><br><br>
-  ACT FASTER
-  <br><br>
-  
- We get to the right insights so you<br>
-  can take action earlier, improve your<br>
-  bottom line sooner, and accelerate<br>
-  the shift from reaction to risk<br>
-  mitigation and prevention while<br>
-  reducing vendor abrasion.<br>
-  
-
-
-<br><br><br>
-
-</div>
-
-  </center>
-  </div>
-
-
-
-</div>
-</div>
-</div>
--->
+  <center>Temperature Converter App's Privacy Policy<br><br><br>
 </center>
-<br><br><br><br><br><br>
 
- <div class="container reveal">
-  <div class="cards">
-  <div class="text-card">  
+<center>
+ 
 
-  
-<div class="row1" onclick="Object.assign(document.createElement('a'), {target: '_blank',href: 'https://pratikrautsoftware_2022.github.io',}).click();">
-  <div class="example-1 card1">
-    <div class="wrapper1" style="background-color:#e5e5e5; color:#000000;">
-      
-      <div class="date1" style="background-color:#c2c2c2; color:#000000;">
-        <span class="day1">1</span>
-        <span class="month1"></span>
-        <span class="year1"></span>
-      </div>
-		 
-		<div class="image1" style="background-color: #000000;  color: #ffffff;">
-		  <img class="book-image1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAFSCAYAAABhft8GAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAUTSURBVHhe7dVBDcAwAAOxdPw5b32MxdlSFAh3tr13AJD0/A8ASUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAYdsHrboDo7g7iR4AAAAASUVORK5CYII="/>
-		 </div>
-      
-      
-      <div class="data1">
-        <div class="content1" style="background-color:#c2c2c2; color:#000000;">
-          <span class="author1">Release date - 17th March 2022</span>
-          <h1 class="title1"><a href="#" class="cardTitle1">New Website</a></h1>
-          <p class="author1">https://pratikrautsoftware_2022.github.io</p>
-          <p class="author1">Visit</p>
-        
-		</div>
-      </div>
-      
-    </div>
-  </div>
+<div id="s_i_1">
+<p><b>ABOUT TEMPERATURE CONVERTER<br /></b></p><p>Temperature Converter is created by Pratik Raut.</p><p>Temperature Converter is a converter which converts temperature from one scale to other scale, and vice versa.<br /><br /><br />Features<br /><br />- Most easy and advanced UI for users to easily get the results at their fingertips.<br /><br />- All conversions of all scales are available.</p><p>&nbsp;<br /></p><p>It consists of the following options that perform the following operations respectively<br /><br />Celsius EditText - Converts temperature from Celsius scale (°C) to other scales like Fahrenheit (°F), Kelvin (°K), Rankine (°R).<br />&nbsp;</p><p>Fahrenheit EditText - Converts temperature from Fahrenheit scale (°F) to other scales like Celsius (°C), Kelvin (°K), Rankine (°R).<br />&nbsp;</p><p>Kelvin EditText - Converts temperature from Kelvin scale (°K) to other scales like Celsius (°C), Fahrenheit (°F), Rankine (°R).<br />&nbsp;</p><p>Rankine EditText - Converts temperature from Rankine scale (°R) to other scales like Celsius (°C), Fahrenheit (°F), Kelvin (°K).<br /></p><p>&nbsp;</p><p>Reset - Clears all the results and sets all the edit texts to blank.</p><p><br />&nbsp;</p><b></b><p style="color: black;"><b>USAGE OF PERMISSIONS</b><br /></p>Temperature Converter does not use any permissions.<br />&nbsp;<p style="color: black;"><b>DATA HANDLING PROCEDURES, DATA RETENTION AND DATA DELETION</b>&nbsp;&nbsp;</p><p>Temperature Converter does not transmit personal or sensitive information nor does it gather user's data or information.</p><p><br /></p><p style="color: black;"><b>FURTHER REACH</b><br /></p><p>If you have any inquiries about temperature converter app's privacy policy, please contact me via. email</p><p>Developer - Pratik Raut <br /></p><p>Email - pratikraut5000@gmail.com <br /></p><p><br /></p>
+<br /><br />
+
+
 </div>
 
-<br><br><br>
-
-
-<div class="row1" onclick="Object.assign(document.createElement('a'), {target: '_blank',href: 'https://pratikrautsoftware.github.io/pages/pratik-rauts-steering-wheel-and-pedals.html',}).click();">
-  <div class="example-1 card1">
-    <div class="wrapper1" style="background-color:#e5e5e5; color:#000000;">
       
-      <div class="date1" style="background-color:#c2c2c2; color:#000000;">
-        <span class="day1">2</span>
-        <span class="month1"></span>
-        <span class="year1"></span>
-      </div>
-		 
-		<div class="image1" style="background-color: #000000;  color: #ffffff;">
-		  <img class="book-image1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAFSCAYAAABhft8GAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAUTSURBVHhe7dVBDcAwAAOxdPw5b32MxdlSFAh3tr13AJD0/A8ASUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAYdsHrboDo7g7iR4AAAAASUVORK5CYII="/>
-		 </div>
-      
-      
-      <div class="data1">
-        <div class="content1" style="background-color:#c2c2c2; color:#000000;">
-          <span class="author1">Release date - 15th May 2017</span>
-          <h1 class="title1"><a href="#" class="cardTitle1">Pratik Raut's Steering Wheel and Pedals</a></h1>
-          <p class="author1">Simulation of video game vehicle using custom pedals that are built using mouse.</p>
-          <p class="author1">Read more</p>
-        
-		</div>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-<br><br><br>
-
-<div class="row1" onclick="Object.assign(document.createElement('a'), {target: '_blank',href: 'https://pratikrautsoftware.github.io/pages/powerpoint-presentation-slides.html',}).click();">
-  <div class="example-1 card1">
-    <div class="wrapper1" style="background-color:#e5e5e5; color:#000000;">
-      
-      <div class="date1" style="background-color:#c2c2c2; color:#000000;">
-        <span class="day1">3</span>
-        <span class="month1"></span>
-        <span class="year1"></span>
-      </div>
-		 
-		<div class="image1" style="background-color: #000000;  color: #ffffff;">
-		  <img class="book-image1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAFSCAYAAABhft8GAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAUTSURBVHhe7dVBDcAwAAOxdPw5b32MxdlSFAh3tr13AJD0/A8ASUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAYdsHrboDo7g7iR4AAAAASUVORK5CYII="/>
-		 </div>
-      
-      
-      <div class="data1">
-        <div class="content1" style="background-color:#c2c2c2; color:#000000;">
-          <span class="author1"></span>
-          <h1 class="title1"><a href="#" class="cardTitle1">PPT Slides</a></h1>
-          <p class="author1">Some of the project related presentation slides.</p>
-          <p class="author1">Read more</p>
-        
-		</div>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-<br><br><br>
-
-<div class="row1" onclick="Object.assign(document.createElement('a'), {target: '_blank',href: 'https://pratikrautsoftware.github.io/pages/computer-softwares.html',}).click();">
-  <div class="example-1 card1">
-    <div class="wrapper1" style="background-color:#e5e5e5; color:#000000;">
-      
-      <div class="date1" style="background-color:#c2c2c2; color:#000000;">
-        <span class="day1">4</span>
-        <span class="month1"></span>
-        <span class="year1"></span>
-      </div>
-		 
-		<div class="image1" style="background-color: #000000;  color: #ffffff;">
-		  <img class="book-image1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAFSCAYAAABhft8GAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAUTSURBVHhe7dVBDcAwAAOxdPw5b32MxdlSFAh3tr13AJD0/A8ASUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAYdsHrboDo7g7iR4AAAAASUVORK5CYII="/>
-		 </div>
-      
-      
-      <div class="data1">
-        <div class="content1" style="background-color:#c2c2c2; color:#000000;">
-          <span class="author1"></span>
-          <h1 class="title1"><a href="#" class="cardTitle1">Computer Softwares</a></h1>
-          <p class="author1">Software related to desktop development sector (windows).</p>
-          <p class="author1">View</p>
-        
-		</div>
-      </div>
-      
-    </div>
-  </div>
-</div>
+    
+</center>
 
 
 
-<br><br><br>
 
-<div class="row1" onclick="Object.assign(document.createElement('a'), {target: '_blank',href: 'https://pratikrautsoftware.github.io/pages/mobile-softwares.html',}).click();">
-  <div class="example-1 card1">
-    <div class="wrapper1" style="background-color:#e5e5e5; color:#000000;">
-      
-      <div class="date1" style="background-color:#c2c2c2; color:#000000;">
-        <span class="day1">5</span>
-        <span class="month1"></span>
-        <span class="year1"></span>
-      </div>
-		 
-		<div class="image1" style="background-color: #000000;  color: #ffffff;">
-		  <img class="book-image1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAFSCAYAAABhft8GAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAUTSURBVHhe7dVBDcAwAAOxdPw5b32MxdlSFAh3tr13AJD0/A8ASUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAYdsHrboDo7g7iR4AAAAASUVORK5CYII="/>
-		 </div>
-      
-      
-      <div class="data1">
-        <div class="content1" style="background-color:#c2c2c2; color:#000000;">
-          <span class="author1"></span>
-          <h1 class="title1"><a href="#" class="cardTitle1">Mobile Softwares</a></h1>
-          <p class="author1">Software related to mobile development sector (android).</p>
-          <p class="author1">View</p>
-        
-		</div>
-      </div>
-      
-    </div>
-  </div>
-</div>
-</div>
-</div>
-</div>
 
-<br><br><br>
-
-<div class="row1" onclick="Object.assign(document.createElement('a'), {target: '_blank',href: 'https://pratikrautsoftware.github.io/pages/about.html',}).click();">
-  <div class="example-1 card1">
-    <div class="wrapper1" style="background-color:#e5e5e5; color:#000000;">
-      
-      <div class="date1" style="background-color:#c2c2c2; color:#000000;">
-        <span class="day1">6</span>
-        <span class="month1"></span>
-        <span class="year1"></span>
-      </div>
-		 
-		<div class="image1" style="background-color: #000000;  color: #ffffff;">
-		  <img class="book-image1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAFSCAYAAABhft8GAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAUTSURBVHhe7dVBDcAwAAOxdPw5b32MxdlSFAh3tr13AJD0/A8ASUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAYdsHrboDo7g7iR4AAAAASUVORK5CYII="/>
-		 </div>
-      
-      
-      <div class="data1">
-        <div class="content1" style="background-color:#c2c2c2; color:#000000;">
-          <span class="author1"></span>
-          <h1 class="title1"><a href="#" class="cardTitle1">About</a></h1>
-          <p class="author1">About myself.</p>
-          <p class="author1">View</p>
-        
-		</div>
-      </div>
-      
-    </div>
-  </div>
-</div>
-</div>
-</div>
 
 
 <br><br><br><br><br><br>
 
 
- <div class="container reveal">
-  <div class="cards">
-  <div class="text-card">  
+
 
 <footer id="footer_1" class="footer">
 <center>
@@ -1008,112 +437,10 @@ Copyright © 2014-present by Pratik Raut. All rights are reserved.
 </center>
 </footer>
 
+
 </div>
-</div>
-</div>
-  
-</div>
-<script>
 
 
-
-window.onscroll = function() {myFunction();};
-
-var header = document.getElementById("header_1");
-var sticky = header.offsetTop;
-
-function myFunction() {
-
-const mq = window.matchMedia( "(min-height: 500px)" );
-
-if (mq.matches) {
-  // window width is at least 500px
-
-var lastScrollTop = 0;
-window.addEventListener("scroll", function(){ 
-   var st = window.pageYOffset || document.documentElement.scrollTop; 
-   if (st > lastScrollTop){
-  // header.style.opacity = '0';
-   } else {
-
-   
-  if (window.pageYOffset > sticky) {
- //   header.classList.add("sticky");
-
-  } else {
- //   header.classList.remove("sticky");
-	
-  }
-  
-  //	header.style.opacity = '1';
-
-   }
-   lastScrollTop = st <= 0 ? 0 : st; 
-}, false);
-
-
-  } else {
-  // window width is less than 500px
-}
-
-
-}
-
-
-function onload()
-{
- document.getElementById('main').style.display="none";
- document.getElementById('main').style.opacity = "0";
-
-  document.getElementById('main').style.display="";
-
-   setTimeout(function () { 
- document.getElementById('main').style.opacity = "1";
- reveal();
- }, 100);
-}
-
-
-onload();
-
-
-/*
-ScrollReveal({ reset: false });
-
-
-ScrollReveal().reveal(".content348", {
-  duration: 3000,
-  origin: "bottom",
-  distance: "200px",
-  easing: "cubic-bezier(0.5, 0, 0, 1)",
-  mobile: true
-});
-
-	*/
-	
-	 window.addEventListener('scroll', reveal);
-
-    function reveal(){
-      var reveals = document.querySelectorAll('.reveal');
-
-      for(var i = 0; i < reveals.length; i++){
-
-        var windowheight = window.innerHeight;
-        var revealtop = reveals[i].getBoundingClientRect().top;
-        var revealpoint = 25;
-
-        if(revealtop < windowheight - revealpoint){
-          reveals[i].classList.add('active');
-        }
-        else{
-        //  reveals[i].classList.remove('active');
-        }
-      }
-    }
-	
-
-
-</script>
 
 </script>
 </body>
