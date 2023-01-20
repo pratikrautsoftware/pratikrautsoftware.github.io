@@ -534,15 +534,44 @@ text-align: left;
   margin-bottom: auto;
 }
 
-</style>
+.content1 {
+ opacity: 1;
+  transition: 3s opacity;
+}
 
+.date1 {
+ opacity: 1;
+  transition: 3s opacity;
+
+}
+
+.docs-icon.goog-inline-block.docs-icon-24 {
+ opacity: 1;
+  transition: 3s opacity;
+
+}
+
+
+.punch-viewer-navbar-logo-text {
+ opacity: 1;
+  transition: 3s opacity;
+
+}
+</style>
+<style>
+img {
+object-fit:contain;
+  max-width: 100%;
+  height: auto;
+}
+</style>
 </head>
 <body>
 <div id="main">
 
 <div class="header" id="header_1">
   <h2 id="header_name">Pratik Raut's Softwares</h2>
-  
+  <br><br>
  
   <nav class="stroke">
     <ul id="nav_bar_ul">
@@ -607,7 +636,7 @@ text-align: left;
 
 
 
-<div class="row1">
+<div class="row1" onclick="var elements2 = document.querySelectorAll('.docs-icon.goog-inline-block.docs-icon-24');elements2.forEach(el2 => el2.style.opacity = '0');var elements3 = document.querySelectorAll('.punch-viewer-navbar-logo-text');elements3.forEach(el3 => el3.style.opacity = '0');">
   <div class="example-1 card1">
     <div class="wrapper1" style="background-color:#e5e5e5; color:#000000;">
       
@@ -781,7 +810,8 @@ function onload()
 onload();
 
 
-	
+
+
 	 window.addEventListener('scroll', reveal);
 
     function reveal(){
@@ -800,6 +830,42 @@ onload();
   
         }
       }
+	  
+   setTimeout(function () { 
+   
+   var elements = document.querySelectorAll('.content1');
+elements.forEach(el => el.style.opacity = "0");
+
+var elements1 = document.querySelectorAll('.date1');
+elements1.forEach(el1 => el1.style.opacity = "0");
+
+
+
+
+
+
+
+
+ }, 2000);
+ 
+ 
+  setTimeout(function () { 
+   
+   var elements = document.querySelectorAll('.content1');
+elements.forEach(el => el.style.display = "none");
+
+var elements1 = document.querySelectorAll('.date1');
+elements1.forEach(el1 => el1.style.display = "none");
+
+
+
+
+
+
+
+
+ }, 4000);
+
     }
 	
 
