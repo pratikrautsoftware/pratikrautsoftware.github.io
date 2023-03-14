@@ -408,6 +408,33 @@ section .cards .text-card h3{
 text-align: left;
 }
 </style>
+
+<script>
+
+
+
+function IsMobileCard()
+{
+var mobile_check_348;
+
+    if (navigator.userAgent.match(/Android/i)
+         || navigator.userAgent.match(/webOS/i)
+         || navigator.userAgent.match(/iPhone/i)
+         || navigator.userAgent.match(/iPad/i)
+         || navigator.userAgent.match(/iPod/i)
+         || navigator.userAgent.match(/BlackBerry/i)
+         || navigator.userAgent.match(/Windows Phone/i)) {
+            mobile_check_348 = 1;
+         } else {
+            mobile_check_348 = 0;
+         }
+
+		 return mobile_check_348;
+		 
+}
+
+</script>
+
 </head>
 <body>
 <div id="main">
@@ -416,18 +443,20 @@ text-align: left;
   <h2 id="header_name">Pratik Raut's Softwares</h2>
   <br><br>
  
-  <nav class="stroke">
+   <nav class="stroke">
     <ul id="nav_bar_ul">
 	
-<li><a href="https://pratikrautsoftware.github.io">Home</a></li>  
+<li><a href="https://pratikrautsoftware.github.io" class="">Home</a></li>  
+<li><div class="dropdown"><a href="#" onclick="var x; x = IsMobileCard(); if(x==1){document.getElementById('dc1').style.display = 'block'; setTimeout(function () {document.getElementById('dc1').style.display = 'none';}, 2000);} else {}">Softwares</a><div id="dc1" class="dropdown-content"><a href="https://pratikrautsoftware.github.io/pages/computer-softwares.html">Computer Softwares</a><a href="https://pratikrautsoftware.github.io/pages/mobile-softwares.html">Mobile Softwares</a><a href="https://pratikrautsoftware.github.io/pages/web-softwares.html">Web Softwares</a></div></div></li>
+<li><div class="dropdown"><a class="active" href="#" onclick="var y; y = IsMobileCard(); if(y==1){document.getElementById('dc2').style.display = 'block'; setTimeout(function () {document.getElementById('dc2').style.display = 'none';}, 2000);} else {}">Miscellaneous</a><div id="dc2" class="dropdown-content"><a href="https://pratikrautsoftware.github.io/pages/pratik-rauts-steering-wheel-and-pedals.html" rel="nofollow" target="_blank">Pratik Raut's Steering Wheel and Pedals</a><a href="https://pratikrautsoftware.github.io/pages/powerpoint-presentation-slides.html" rel="nofollow" target="_blank">PPT Slides</a><a href="https://pratikrautsoftware.github.io/pages/about.html">About</a></div></div></li>
 
-  <li><a href="https://pratikrautsoftware.github.io/pages/computer-softwares.html">Computer Softwares</a></li>
-  <li><a href="https://pratikrautsoftware.github.io/pages/mobile-softwares.html">Mobile Softwares</a></li>
-  <li><a href="https://pratikrautsoftware.github.io/pages/about.html" class="active">About</a></li>
+
  
-  
     </ul>
   </nav>
+
+
+
 </div>
 
 </div>
