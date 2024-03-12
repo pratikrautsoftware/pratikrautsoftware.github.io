@@ -956,6 +956,33 @@ var mobile_check_348;
 </tr>
 
 
+<tr id="cs_15" onclick="Object.assign(document.createElement('a'), {target: '_blank',href: 'https://pratikrautsoftware.github.io/posts/result-analysis.html',}).click();" class="base ng-scope" ng-repeat-start="user in $data" ng-if="($index + 1) <= totalLazyLoad" ng-class="{expand: expandedItem === user}" ng-click="toggle($event, user)">
+
+<td style="width:24;" ng-repeat="column in columns" class="rank" data-title-text="rank" ng-if="$columns[$index].show(this)">
+<div ng-if="!isMobile &amp;&amp; column.field !== 'change' &amp;&amp; column.field !== 'image' &amp;&amp; column.field !== 'name'" class="ng-scope">
+<a style="color:#000000" class="number">15</a>
+
+<!--<span class="ng-binding">1</span> -->
+
+</div>
+</td>
+
+<td width="100" ng-repeat="column in columns" class="image" data-title-text="image" ng-if="$columns[$index].show(this)">
+
+<a ng-if="column.field === 'image'"  class="ng-scope">
+<img ng-src="" src="" width="85">
+</a>
+</td>
+
+<td ng-repeat="column in columns" class="name" data-title-text="name" ng-if="$columns[$index].show(this)">
+<div ng-if="!isMobile &amp;&amp; column.field === 'name'" class="ng-scope">
+<h3><a  class="ng-binding" >Result Analysis<br><br><div class="description">Release year - 2023-2024<br><br>Result Analysis exports the result data from PDF file to Excel sheet<br>and performs analysis on the result data.</div></a></h3>
+</div>
+</td>
+
+
+</tr>
+
 
 <tr ng-if="($index + 1) <= totalLazyLoad &amp;&amp; ($index + 1) % 10 === 0" class="table-ad ng-scope" ng-repeat-end="" style="border:0px none;">
 <td colspan="8" style="display: block;border:0px none;">
