@@ -484,7 +484,6 @@ tr {
 
 </style>
 
-
 <script>
 
 
@@ -550,7 +549,7 @@ var mobile_check_348;
   <div class="cards">
   <div class="text-card">  
 
-
+<input type="text" placeholder="Search for computer software" name="search_field" id="search_field348" style="width: 50vw; height: 48px; outline: none !important; border:1px solid #000000;box-shadow: 0 0 10px #c2c2c2; padding: 0 16px 0 16px;"></input>
 
 <div class="fbs-table">
 <div class="scrolly-table">
@@ -1123,9 +1122,84 @@ onload();
     }
 	
 
+function closeIt()
+{
+document.getElementById('search_field348').value = "";
+}
+window.onbeforeunload = closeIt;
+</script>
+
+	
+<script>
+/*
+document.getElementById('search_field348').addEventListener('input', function() {
+    var searchTerm = this.value.toLowerCase();
+    var rows = document.querySelectorAll('#table0 tbody tr');
+
+    for (var i = 0; i < rows.length; i++) {
+        var row = rows[i];
+        var cells = row.getElementsByTagName('td');
+        var rowContainsSearchTerm = false;
+
+        for (var j = 0; j < cells.length; j++) {
+            var cell = cells[j];
+            if (cell.innerHTML.toLowerCase().indexOf(searchTerm) !== -1) {
+                rowContainsSearchTerm = true;
+                break;
+            }
+        }
+
+        if (rowContainsSearchTerm) {
+            row.style.display = '';
+        } else {
+            row.style.display = 'none';
+        }
+    }
+});
+*/
+
+/*
+	function doSearch(text, backgroundColor) {
+    if (window.find && window.getSelection) {
+        document.designMode = "on";
+        var sel = window.getSelection();
+        sel.collapse(document.body, 0);
+
+        while (window.find(text)) {
+            document.execCommand("HiliteColor", false, backgroundColor);
+            sel.collapseToEnd();
+        }
+        document.designMode = "off";
+    }
+}	
+	*/
+	
+	
+
+ var tableRows = document.querySelectorAll('#table0 tbody tr');
+    var searchInput = document.getElementById('search_field348');
+
+    searchInput.addEventListener('keyup', function() {
+        var val = '^(?=.*\\b' + this.value.trim().split(/\s+/).join('\\b)(?=.*\\b') + ').*$';
+        var reg = new RegExp(val, 'i');
+        var text;
+			
+        tableRows.forEach(function(row) {
+            row.style.display = 'table-row';
+            text = row.textContent.replace(/\s+/g, ' ');
+
+            if (!reg.test(text)) {
+                row.style.display = 'none';
+            }
+        });
+	
+    });
+	
+
 
 </script>
 
-</script>
+
+
 </body>
 </html>

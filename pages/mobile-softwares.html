@@ -555,6 +555,9 @@ var mobile_check_348;
   <div class="text-card">  
 
 
+<input type="text" placeholder="Search for mobile software" name="search_field" id="search_field348" style="width: 50vw; height: 48px; outline: none !important; border:1px solid #000000;box-shadow: 0 0 10px #c2c2c2; padding: 0 16px 0 16px;"></input>
+
+
 
 <div class="fbs-table">
 <div class="scrolly-table">
@@ -961,9 +964,35 @@ onload();
     }
 	
 
-
+function closeIt()
+{
+document.getElementById('search_field348').value = "";
+}
+window.onbeforeunload = closeIt;
 </script>
 
+<script>
+
+
+ var tableRows = document.querySelectorAll('#table0 tbody tr');
+    var searchInput = document.getElementById('search_field348');
+
+    searchInput.addEventListener('keyup', function() {
+        var val = '^(?=.*\\b' + this.value.trim().split(/\s+/).join('\\b)(?=.*\\b') + ').*$';
+        var reg = new RegExp(val, 'i');
+        var text;
+			
+        tableRows.forEach(function(row) {
+            row.style.display = 'table-row';
+            text = row.textContent.replace(/\s+/g, ' ');
+
+            if (!reg.test(text)) {
+                row.style.display = 'none';
+            }
+        });
+	
+    });
+	
 </script>
 </body>
 </html>
